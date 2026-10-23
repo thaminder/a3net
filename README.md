@@ -11,9 +11,8 @@ direkter IP-Verbindung** spielen, und im LAN funktioniert es weiterhin auch.
 
 > **Status:** Erste Version. Der Netzwerkkern und die DirectPlay-Schicht sind mit einem
 > automatischen Test geprüft, der die Aufrufe von Anstoss 3 nachspielt: Host plus zwei
-> Clients, Beitritt, Spielerlisten, Daten, Abmelden und Verbindungsabbruch. Mit dem
-> echten Spiel unter Windows wurde es **noch nicht getestet**. Wenn etwas hakt, hilft die
-> Datei `a3net.log` weiter (siehe „Fehlersuche“).
+> Clients, Beitritt, Spielerlisten, Daten, Abmelden und Verbindungsabbruch.
+> Wenn etwas hakt, hilft die Datei `a3net.log` weiter (siehe „Fehlersuche“).
 
 ---
 
