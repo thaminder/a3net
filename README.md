@@ -150,9 +150,3 @@ Die Spieldaten von Anstoss 3 werden unverändert transportiert. Die Details steh
 - Namensänderungen von Spielern nach dem Beitritt werden nicht übertragen (das Spiel nutzt das laut Analyse nicht).
 - Gruppen, Chat und Lobby-Start werden nicht unterstützt (das Spiel nutzt sie ebenfalls nicht).
 
-## 9. Rechtliches
-
-A3Net enthält **keinen Code und keine Daten von Anstoss 3**. Für die Schnittstelle wurde nur
-analysiert, welche DirectPlay-Funktionen das Spiel aufruft. Das ist eine Analyse zur Herstellung
-der Interoperabilität (in Österreich § 40e UrhG). Weitergeben solltest du nur dieses Projekt bzw.
-die gebaute `dinput.dll`, keine Spieldateien.
