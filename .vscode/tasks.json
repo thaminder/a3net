@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "A3Net: Test ausfuehren (Host+Client lokal)",
+      "type": "shell",
+      "command": "${command:cmake.launchTargetPath}",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

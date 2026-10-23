@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "msvc-x86",
+      "displayName": "Visual Studio 2022 Build Tools - 32 Bit (empfohlen)",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "Win32",
+      "binaryDir": "${sourceDir}/build/msvc-x86",
+      "cacheVariables": {
+        "A3_GAME_DIR": ""
+      }
+    },
+    {
+      "name": "mingw32",
+      "displayName": "MinGW 32 Bit (MSYS2 mingw32)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/mingw32",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "i686-w64-mingw32-g++",
+        "A3_GAME_DIR": ""
+      }
+    },
+    {
+      "name": "linux-test",
+      "displayName": "Linux/macOS - nur Testprogramm",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/linux",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "msvc-x86-release", "displayName": "Release (32 Bit, MSVC)", "configurePreset": "msvc-x86", "configuration": "Release" },
+    { "name": "msvc-x86-debug", "displayName": "Debug (32 Bit, MSVC)", "configurePreset": "msvc-x86", "configuration": "Debug" },
+    { "name": "mingw32-release", "displayName": "Release (32 Bit, MinGW)", "configurePreset": "mingw32" },
+    { "name": "linux-test", "configurePreset": "linux-test" }
+  ]
+}
